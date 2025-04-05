@@ -7,12 +7,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="script" type="text/js" href="javascript.js">
     </head>
     <body>
         <header>
+            <div class="header">
+                <h1>LUNO</h1>
+            </div>
             <div class="container">
                 <div id="branding">
-                    <h1><span class="highlight">Luno</span></h1>
+                    <h1><span class="highlight">Sign in with your email</span></h1>
                 </div>
                 <div class = "login">
                     <form
@@ -23,12 +27,13 @@
                             
                             <input type="email" placeholder="Email address" name="email">
                         </label>
+                        <br><br>
                             <label>
                                 
                                 <input name="message" placeholder="Password" type="password">
                         </label>
-                    
-                        <button type="submit">Send</button>
+                        <br><br>
+                       <button type="submit" onclick="redirectFunction()">NEXT</a></button>
                     </form>
                 </div>
             </div>
