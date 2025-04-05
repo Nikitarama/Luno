@@ -8,8 +8,9 @@ div.header {
 }
 
 .header img {
-    width: 40px;
-    height:auto;
+    margin-top: 14px;
+    width: 42px;
+    height: 45px;
 }
 
 .header h1 {
