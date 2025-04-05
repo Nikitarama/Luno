@@ -3,13 +3,23 @@ body {
     width:max-content;
 }
 
+div.header {
+    display: flex;
+}
+
+.header img {
+    width: 40px;
+    height:auto;
+}
+
 .header h1 {
+    display: table-row;
     position: relative;
-    left: 2%;
+    
     color:white;
     font-family:"Baumans", system-ui;
     font-weight: 500;
-    
+    font-size: 30px;
 }
 
 .baumans-regular {
@@ -27,10 +37,11 @@ body {
     left: 15%;
     color:rgba( 7 , 18 , 120 , 1);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight:600;
 }
 
 .container {
+    margin-top: 90px;
     margin-left: 470px;
     padding: 70px;
     width:500px;
@@ -55,6 +66,7 @@ input[type=email] {
     border-radius: 5px;
     width: 300px;
     font-size: medium;
+    height: 30px;
 }
 input[type=password] {
     padding: 15px;
@@ -63,6 +75,7 @@ input[type=password] {
     border-radius: 5px;
     width: 300px;
     font-size: medium;
+    height: 30px;
 }
 
 button {
@@ -73,7 +86,7 @@ button {
     color: white;
     border-radius: 30px;
     border: 0px solid black;
-    font-weight: 400;
+    font-weight:700;
     font-size: large;
 }
 
