@@ -1,5 +1,6 @@
 body {
     background-color:  rgba( 7 , 18 , 120 , 1);
+    width:max-content;
 }
 
 .header h1 {
@@ -20,6 +21,7 @@ body {
   
 
 #branding h1 {
+    margin-bottom: 60px;
     position: relative; 
     bottom: 20px;
     left: 15%;
@@ -64,6 +66,7 @@ input[type=password] {
 }
 
 button {
+    margin-top: 50px;
     padding: 20px;
     background-color: blue;
     width: 330px;
