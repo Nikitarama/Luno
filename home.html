@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <title>Luno</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="script" type="text/js" href="javascript.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
     <body>
         <header>
@@ -19,9 +21,20 @@
                  </svg>
                 
             </div>
+            <br>
+
+            <div class="voucher">
+                <button type="submit" class="btn" onclick="openPopUp()">Redeem</button>
+                <div class="popUp" id="popup">
+                    <img src="/assets/checkmarkgreen.png">
+                    <h3>You have received a R5000 voucher!</h3>
+                    <p>Login to redeem your voucher</p>
+                    <button type="button" onclick="closePopUp()">OK</button>
+                </div>
+            </div>
             <div class="container">
-                <img src="/assets/ill_email.png" alt="email-logo">
                 <div id="branding">
+                    <img src="/assets/ill_email.png" alt="email-logo">
                     <h1><span class="highlight">Sign in with your email</span></h1>
                 </div>
                 <div class = "login">
@@ -39,11 +52,28 @@
                                 <input name="message" placeholder="Password" type="password">
                         </label>
                         <br><br>
-                       <button type="submit" onclick="redirectFunction()">NEXT</a></button>
+                       <button type="submit" onclick="redirectFunction()">NEXT</button>
                     </form>
                     <p>Luno (Pty) Ltd is a licenced financial services provider, registration number 53314.</p>
                 </div>
             </div>
         </header>
+<script>
+let popUp = document.getElementById("popup");
+
+function openPopUp() {
+    popup.classList.add("open-popup");
+}
+
+function closePopUp() {
+    popup.classList.add("close-popup");
+}
+
+
+function redirectFunction(){ 
+    window.location.href="https://www.luno.com/en/za.co.za"; 
+  } 
+
+</script>
     </body>
 </html>

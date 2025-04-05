@@ -23,23 +23,98 @@ div.header {
     font-size: 30px;
 }
 
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .baumans-regular {
     font-family: "Baumans", system-ui;
     font-weight: 400;
     font-style: normal;
     
-  }
+}
   
 
 #branding h1 {
     margin-bottom: 60px;
     position: relative; 
     bottom: 20px;
-    left: 15%;
+    left: 17%;
     color:rgba( 7 , 18 , 120 , 1);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:500;
+    font-family: "Lato", sans-serif;
+    font-weight:600;
     
+}
+
+.voucher button {
+    margin-left: 61%;
+    padding: 9px;
+    width: 229px;
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    border: 1px solid #8eba8ee0;
+    border-radius: 20px;
+    background-color: #8eba8ee0;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.voucher button:hover {
+    background-color: #8eba8e;
+}
+
+.popUp button {
+    margin-left: 0%;
+    padding: 8px;
+    border: 1px solid darkseagreen;
+    border-radius: 20px;
+    background-color: darkseagreen;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popUp button:hover {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); 
+}
+
+
+.popUp img {
+    width: 100px;
+    margin-top: -9%;
+    border-radius:50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popUp {
+    width:400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position:absolute;
+    
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    z-index:1;
+    visibility: hidden;
+    transition: transform 0.3s, top 0.3s;
+}
+
+.open-popup {
+    top: 31%;
+    left: 53%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.close-popup {
+    top: 21%;
+    left: 52%;
+    visibility:visible;
+    transform: translate(-50%, -50%) scale(0.7);
 }
 
 .container {
@@ -67,6 +142,7 @@ div.header {
     justify-content: space-between;
     align-items: center;
     font-family:Arial, Helvetica, sans-serif;
+    z-index:0;
 }
 
 .login p{
@@ -83,23 +159,33 @@ div.header {
 input[type=email] {
     padding: 15px;
     border-width: 2px;
-    border-color: blue;
+    border: 1px solid rgba(7, 18, 120, 1);
     border-radius: 5px;
     width: 350px;
     font-size: medium;
     height: 30px;
+    color: rgba(7, 18, 120, 1);
 }
+
 input[type=password] {
     padding: 15px;
     border-width: 2px;
-    border-color: blue;
+    border: 1px solid rgba(7, 18, 120, 1);
     border-radius: 5px;
     width: 350px;
     font-size: medium;
     height: 30px;
+    color: rgba(7, 18, 120, 1);
 }
 
-button {
+::placeholder {
+    color: rgba(7, 18, 120, 1);
+    font-family: Fracktif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+
+.login button {
     margin-top: 50px;
     padding: 20px;
     background-color: blue;
@@ -111,7 +197,7 @@ button {
     font-size: large;
 }
 
-button:hover {
+.login button:hover {
     background-color: #0000c1;
     color: white;
     font-weight: 500;
