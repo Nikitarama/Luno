@@ -48,12 +48,13 @@ div.header {
     
 }
 
+
 .voucher button {
-    margin-left: 61%;
+    margin-left: 57%;
     padding: 9px;
-    width: 229px;
+    width: 300px;
     font-family: "Lato", sans-serif;
-    font-size: medium;
+    font-size: 20px;
     border: 1px solid #8eba8ee0;
     border-radius: 20px;
     background-color: #8eba8ee0;
@@ -66,12 +67,16 @@ div.header {
 }
 
 .popUp button {
-    margin-left: 0%;
-    padding: 8px;
-    border: 1px solid darkseagreen;
-    border-radius: 20px;
+    margin-left: 5%;
+    padding: 10px;
+    width: 360px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    border: 1px solid #8eba8ee0;
+    border-radius: 25px;
     background-color: darkseagreen;
     color: #fff;
+    font-size: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,7 +97,7 @@ div.header {
     background-color: #fff;
     border-radius: 6px;
     position:absolute;
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     top:0;
     left:50%;
     transform: translate(-50%, -50%) scale(0.1);
@@ -106,10 +111,12 @@ div.header {
 
 .open-popup {
     top: 31%;
-    left: 53%;
+    left: 52%;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+   
 }
+
 .close-popup {
     top: 21%;
     left: 52%;
@@ -133,6 +140,13 @@ div.header {
     left: 40%;
     width: 100px;
     height: 100px;
+}
+
+.login a p{
+    color: blue;
+    font-size: 20px;
+    font-family:"Lato", sans-serif;
+    text-underline-offset: none;
 }
 
 .login {
@@ -202,3 +216,122 @@ input[type=password] {
     color: white;
     font-weight: 500;
 }
+
+@media screen and (max-width: 800px) {
+
+    .voucher [type="submit"] {
+        position: relative;
+        right: 26%;
+    }
+    .voucher button input[type="button"]{
+        
+        padding: 13px;
+        width: 377px;
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        border: 1px solid #8eba8ee0;
+        border-radius: 25px;
+        background-color: #8eba8ee0;
+        color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .login {
+        position: relative;
+        left: 72px;
+        flex-direction: column;
+        
+    }
+
+    .login p{
+        position: relative;
+        top: 10px;
+        right: 6px;
+        font-weight: 500;
+        font-size: 8px;
+        text-align: center;
+        width: 206px;
+        color: rgba(7, 18, 120, 1);
+    }
+    .popUp {
+        width:400px;
+        background-color: #fff;
+        border-radius: 6px;
+        position:absolute;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        top:0;
+        left:50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        z-index:1;
+        visibility: hidden;
+        transition: transform 0.3s, top 0.3s;
+    }
+    .open-popup {
+        top: 65%;
+        left: 87%;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+       
+    }
+    
+    .close-popup {
+        top: 48%;
+        left: 86%;
+        visibility:visible;
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+    .container {
+        margin-top: 18px;
+        margin-left: 64px;
+        padding: 57px;
+        width: 436px;
+        border: 0px solid black;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .container img {
+        position: relative; 
+        bottom: 15px;
+        left: 39%;
+        width: 113px;
+        height: 118px;
+    }
+
+    form {
+        position: relative; 
+        bottom: 9px;
+        right: 14%;
+    }
+    #branding h1 {
+        margin-bottom: 60px;
+        position: relative; 
+        bottom: 20px;
+        left: 10%;
+        color:rgba( 7 , 18 , 120 , 1);
+        font-family: "Lato", sans-serif;
+        font-weight:600;
+        
+    }
+    .login p{
+        position: relative;
+        top: 10px;
+        right: 64px;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        width: 406px;
+        color: rgba(7, 18, 120, 1);
+    }
+    .login a p{
+        color: blue;
+        font-size: 20px;
+        right: 18px;
+        top: 41px;
+        font-weight: 600;
+        font-family:"Lato", sans-serif;
+        text-underline-offset: none;
+    }
+  }
